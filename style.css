@@ -1,0 +1,73 @@
+/* Estilo Padrão (Modo Claro) */
+body {
+  font-family: sans-serif;
+  background-color: #f0f4f8;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  transition: background-color 0.4s, color 0.4s; /* Suaviza a troca de cor */
+}
+
+.cartao {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  text-align: center;
+  width: 300px;
+}
+
+.perfil {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 3px solid #8a2be2; /* Adiciona uma bordinha azul legal em volta da foto! */
+}
+
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.botao-link {
+  background-color: #8a2be2;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+#btn-tema {
+  background-color: transparent;
+  border: 2px solid #333;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Classe especial que o JavaScript vai ativar (Modo Escuro) */
+body.modo-escuro {
+  background-color: #1a1a1a;
+  color: #f0f4f8;
+}
+
+body.modo-escuro .cartao {
+  background: #2d2d2d;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+}
+
+body.modo-escuro #btn-tema {
+  border-color: #f0f4f8;
+  color: #f0f4f8;
+}
+
